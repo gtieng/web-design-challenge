@@ -1,3 +1,10 @@
 .blank{
     background-color: white;
 }
+
+
+@media (max-width: 768px) {
+    .bg-dark{
+        background: red !important;
+    }
+}
