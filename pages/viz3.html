@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
 
     <title>vs. Cloudiness | Gerardbot 3000</title>
   </head>
   <body>
     <!--begin navbar code-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">Gerardbot 3000</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,34 +40,43 @@
         </ul>
       </div>
     </nav>
-   
-   <!--jumbotron-->
-    <div class="jumbotron">
-      <h1 class="display-4">vs. Cloudiness</h1>
-      <hr class="my-4">
-      <img src="../Resources/assets/images/Fig3.png" class="img-fluid" alt="Responsive image">
-      <br>
-      <br>
-      <br>
-      <p>The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-      
-      <p>After assembling the dataset, we used Matploylib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-    </div>
+    
     
     <!--jumbotron-->
     <div class="jumbotron">
-      <h1 class="display-4">Visualizations</h1>
+      <h1 class="display-4 text-center font-weight-bold">vs. Cloudiness</h1>
+      <br>
+         <br>
+          <div class="container">
+              <div class="row">
+                 <div class="col-xl-8 align-self-center">
+                     <img src="../Resources/assets/images/Fig3.png" class="img-fluid" alt="Responsive image">
+                     <br>
+                     <br>
+                 </div>
+                  <div class="col-xl-4 align-self-center">
+                  <p>This scatter plot of the average cloudiness of 500 random cities around the globe appears to show that overcast is not greatly affected by the location's distance from the equator line. Patterns at quarter markings suggest cities report their cloudiness ratings rounded to the nearest 5%.</p>
+                  </div>
+              </div>
+          </div>
+    </div>
+    
+
+    
+    <!--jumbotron-->
+    <div class="jumbotron blank">
+      <h1 class="display-4 font-weight-bold text-center">More Visualizations</h1>
       <hr class="my-4">
         <div class="row">
           
                <div class="col-md mt-4">
-                   <h3 class="display-6">vs. Max Temperature</h3>
+                   <h3 class="display-6 text-center">vs. Max Temperature</h3>
                    <a href="viz1.html"><img src="../Resources/assets/images/Fig1.png" class="img-fluid" alt="Responsive image"></a>
                    <hr class="my-4">
                    </div>
 
                <div class="col-md mt-4">
-                   <h3 class="display-6">vs. Humidity</h3>
+                   <h3 class="display-6 text-center">vs. Humidity</h3>
                    <a href="viz2.html"><img src="../Resources/assets/images/Fig2.png" class="img-fluid" alt="Responsive image"></a>
                    <hr class="my-4">
                    </div>
@@ -75,13 +85,13 @@
         
           <div class="row">
                <div class="col-md mt-4">
-                  <h3 class="display-6">vs. Cloudiness</h3>
+                  <h3 class="display-6 text-center">vs. Cloudiness</h3>
                   <a href="viz3.html"><img src="../Resources/assets/images/Fig3.png" class="img-fluid" alt="Responsive image"></a>
                   <hr class="my-4">
                   </div>
                   
                 <div class="col-md mt-4">
-                    <h3 class="display-6">vs. Wind Speed</h3>
+                    <h3 class="display-6 text-center">vs. Wind Speed</h3>
                     <a href="viz4.html"><img src="../Resources/assets/images/Fig4.png" class="img-fluid" alt="Responsive image"></a>
                     <hr class="my-4">
                     </div>
